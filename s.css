@@ -1,0 +1,66 @@
+.radio{
+    display: none;
+
+}
+.container{
+    position: relative;
+    max-width: 100%;
+    margin: 5% auto;
+}
+.slider{
+    width: 100%;
+    position: absolute;
+    height: 0;
+    padding-top: 100%;
+    overflow: hidden;
+    border: solid 1px #2e2e2e;
+    box-shadow: 0 0 40px rgba(0, 0, 0,0);
+}
+.slide{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.1);
+    transition: 1.3s;
+}
+.slide-1text{
+    position: absolute;
+    top:85%;
+    margin-left: 22%;
+    color: white;
+}
+.dots{
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.dots label{
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    margin:0 10px;
+    border-radius: 50%;
+    opacity: 0.3;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.dots label:hover{
+    opacity: 0.7;
+}
+#radio-1:checked ~ #slide-1,
+#radio-2:checked ~ #slide-2,
+#radio-3:checked ~ #slide-3{
+    opacity: 1;
+}

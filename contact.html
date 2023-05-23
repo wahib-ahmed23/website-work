@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Form</title>
+  <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+  <form id="contactForm" action="submit.php" method="POST">
+    <div class="form-row">
+      <div class="form-group">
+        <input type="text" id="name" name="name" required placeholder="Name">
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" name="email" required placeholder="Email">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <input type="tel" id="phone" name="phone" required placeholder="Phone">
+      </div>
+      <div class="form-group">
+        <input type="text" id="city" name="city" required placeholder="City">
+      </div>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
